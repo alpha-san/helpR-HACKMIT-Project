@@ -124,16 +124,16 @@
     </script>
 
     <script type="text/x-handlebars" id="contact">
-    <div class="container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel venenatis diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in cursus orci. Vivamus vitae tellus in lectus congue convallis. In hac habitasse platea dictumst. Ut porttitor non neque id rutrum. Suspendisse potenti. Nam vel lorem vulputate, vulputate nibh id, elementum magna. Nulla scelerisque imperdiet velit sed ornare. Vivamus lobortis mi sed sem ornare, at pulvinar sapien semper. Suspendisse a erat vitae mauris consequat porttitor sit amet id diam. In a purus ultrices, rhoncus lectus nec, convallis metus. Pellentesque cursus interdum velit, ac semper lorem commodo vitae.</p>
-
-      <p>Duis suscipit tellus et leo sodales, et condimentum arcu lobortis. Praesent hendrerit sapien et metus sagittis vestibulum. Vestibulum nec scelerisque justo. Curabitur elit velit, sagittis eu adipiscing vitae, scelerisque interdum tortor. Maecenas viverra purus vel tempor sollicitudin. Praesent quis gravida ante. Aenean laoreet lacus vel nunc fermentum pellentesque. Proin fringilla augue sed lacus congue, eu lobortis neque facilisis. Duis consequat massa porta felis faucibus blandit. Duis at quam et tortor dictum semper at eu ante. Nullam malesuada arcu quis purus blandit, non accumsan enim mattis. Donec ac nulla non neque ornare ultricies. Nullam ac libero libero. Duis nec bibendum urna, eleifend congue tortor. Integer condimentum quis enim quis iaculis. Cras venenatis eros vel metus dignissim, quis fringilla felis pretium.</p>
-
-      <p>Sed id felis et eros lobortis tempus quis sed orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue metus, tempor non elementum ut, luctus sed neque. Morbi posuere lectus lorem, sit amet posuere tellus laoreet a. Nam lobortis ac odio eget mattis. Mauris gravida commodo sapien, ut ultrices dui bibendum id. Sed placerat scelerisque dui a suscipit.</p>
-
-      <p>Etiam nec turpis ut urna tempor eleifend ac et massa. Nulla facilisi. Donec in nibh in tortor adipiscing tincidunt lobortis nec massa. Aliquam vel cursus tortor. Ut ut orci eleifend, sollicitudin leo ut, auctor massa. Mauris euismod arcu dapibus bibendum congue. Etiam aliquam posuere pulvinar. Etiam tincidunt, sapien quis sagittis ornare, velit libero rhoncus urna, ornare fermentum sapien nulla non sem.</p>
-
-      <p>Nulla luctus justo et consectetur vehicula. Ut quis est suscipit, imperdiet nibh a, ornare metus. Fusce pellentesque, justo eu molestie venenatis, felis metus mattis metus, vel dapibus nulla risus eu arcu. Aliquam dictum erat ac adipiscing volutpat. Maecenas mattis dictum dignissim. Cras eget viverra nibh. Vivamus nec lorem volutpat, gravida magna a, malesuada augue. Sed malesuada eros eu dui aliquet pharetra. Nam rhoncus sagittis lorem, pulvinar imperdiet sem. Curabitur odio tortor, varius non tempus id, tristique vel nisl. Morbi turpis enim, lobortis sit amet tincidunt a, feugiat non felis. Phasellus felis quam, sagittis ut purus in, tristique varius odio. Morbi ut commodo tortor, vestibulum dictum dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a eros tincidunt tellus pharetra cursus.</p>
+        <div class="container">
+        <input type='text' id='eventNameInput' placeholder='Event Name'><br>
+        <input type='text' id='streetInput' placeholder='Street'><br>
+        <input type='text' id='stateInput' placeholder='State'><br>
+        <input type='text' id='cityInput' placeholder='City'><br>
+        <input type='text' id='zipCodeInput' placeholder='Zip Code'> <br>
+        <input type='text' id='dateInput' placeholder='Date Format MM/DD/YYYY'><br>
+        <input type='text' id='startTimeInput' placeholder='Start Time (Ex:"HH:MM am/pm")'> <br>
+        <input type='text' id='endTimeInput' placeholder='End Time (Ex:"HH:MM am/pm")'> <br>
+        <button name="submit" onclick={{#submitNewEvent}}{{/submitNewEvent}}>Submit</button>
     </div>
     </script>
 
