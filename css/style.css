@@ -1,1 +1,158 @@
-/* Put your CSS here */
+html, body {
+	height: 100%;
+	padding: 0;
+	margin:0;
+}
+
+.navbar-inverse {
+	background-color: #DD3333;
+	border-width: 0 0 3px;
+	border-color: #900;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: #900;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #FAA;
+}
+
+body > .container {
+	padding: 3.5em 0 0;
+	max-width: none;
+	height: 100%;
+}
+
+#events {
+	float: left;
+	width: 70%;
+	padding: 2%;
+	height: 100%;
+	min-width: 20em;
+	font-size: 1.125em;
+	overflow: auto;
+}
+
+#events div {
+	float: left;
+	width: 48%;
+	padding: 2%;
+	min-width: 28em;
+	position: relative;
+	background: #F9F9F9;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px #EEE;
+	margin-bottom: 2em;
+}
+
+#events > div:nth-child(odd) {
+	margin-right: 2em;
+}
+
+#events div img {
+	float: left;
+	margin: 0 0.75em 0 0;
+}
+
+#events div h2 {
+	padding: 0 0 0.75em;
+	margin: 0;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+#events div p {
+	padding: 0 0 1em;
+	line-height: 1.5em;
+	font-size: 0.875em;
+	margin: 0;
+}
+
+#events div footer {
+	position: absolute;
+	bottom: 1.5em;
+	right: 1.5em;
+	font-size: 0.75em;
+	font-style: italic;
+	color: #888;
+	text-align: right;
+}
+
+.event-desc {
+	float: right;
+	width: 30%;
+	height: 100%;
+	min-width: 20em;
+	padding: 2%;
+	position: relative;
+}
+
+.event-desc h2 {
+	margin: 0;
+	padding: 0 0 0.5em;
+	font-size: 2em;
+}
+
+.event-desc img {
+	width: 100%;
+	height: auto;
+}
+
+.event-desc span {
+	display: block;
+	text-align: right;
+	padding: 0.5em 0 1.5em;
+	font-style: italic;
+	color: #888;
+}
+
+.event-desc nav {
+	display: block;
+	background-color: #FAFAFA;
+	padding: 0.25em 1em;
+	box-shadow: 1px 1px 3px #EEE;
+	border-radius: 2px;
+}
+
+.event-desc nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.event-desc nav ul li {
+	display: inline;
+	border-right: solid 1px #900;
+}
+
+.event-desc nav ul li:last-child {
+	border-right: none;
+}
+
+.event-desc nav ul li a {
+	padding: 0.25em 0.75em;
+	color: #C00;
+}
+
+.event-desc p {
+	line-height: 1.5em;
+	padding: 1em;
+}
+
+.event-desc input {
+	position: absolute;
+	bottom: 2em;
+	right: 2em;
+	background-color: #b00;
+	padding: 1em 2em;
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	box-shadow: 1px 1px 3px #EEE;
+}
