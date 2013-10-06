@@ -58,8 +58,7 @@ Handlebars.registerHelper("getAllEventStubs", function() {
    return s;
 });
 
-Handlebars.registerHelper("submitNewEvent", function() {
-    var eventRef = new Firebase("https://cal-poly-hackmit.firebaseio.com/events");
+Handlebars.registerHelper("submitNewEvent", function(name, street, city, state, zipCode, dateThing, startTime, endTime, obj) {
 
     var newPushRef = myDataRef.push();
             var name = $('#eventNameInput').val();
@@ -80,5 +79,5 @@ Handlebars.registerHelper("submitNewEvent", function() {
              "start-time":startTime,
              "end-time":endTime
             };
-            newPushRef.set(obj);    
+            newPushRef.set(obj);
 });
