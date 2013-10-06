@@ -1,7 +1,90 @@
-body {
-  padding-top: 50px;
+html, body {
+	height: 100%;
+	padding: 0;
+	margin:0;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+
+.navbar-inverse {
+	background-color: #DD3333;
+	border-width: 0 0 3px;
+	border-color: #900;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: #900;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #FAA;
+}
+
+body > .container {
+	padding: 3.5em 0 0;
+	max-width: none;
+	height: 100%;
+}
+
+#events {
+	float: left;
+	width: 70%;
+	padding: 2%;
+	height: 100%;
+	min-width: 20em;
+	font-size: 1.125em;
+	overflow: auto;
+}
+
+#events div {
+	float: left;
+	width: 45%;
+	padding: 2%;
+	min-width: 28em;
+	position: relative;
+	background: #F9F9F9;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px #EEE;
+	margin-bottom: 2em;
+}
+
+#events > div:nth-child(odd) {
+	margin-right: 2em;
+}
+
+#events div img {
+	float: left;
+	margin: 0 0.75em 0 0;
+}
+
+#events div h2 {
+	padding: 0 0 0.75em;
+	margin: 0;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+#events div p {
+	padding: 0 0 1em;
+	line-height: 1.5em;
+	font-size: 0.875em;
+	margin: 0;
+}
+
+#events div footer {
+	position: absolute;
+	bottom: 1.5em;
+	right: 1.5em;
+	font-size: 0.75em;
+	font-style: italic;
+	color: #888;
+	text-align: right;
+}
+
+.event-desc {
+	float: right;
+	width: 25%;
+	height: 100%;
 }
