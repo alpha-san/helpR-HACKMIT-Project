@@ -2,35 +2,58 @@ App = Ember.Application.create();
 
 App.Router.map(function() {
   this.resource('about');
-  this.resource('contact');
   this.resource('events');
+  this.resource('contact');
 });
 
-Handlebars.registerHelper("getAllEventsTable", function() {
+Handlebars.registerHelper("getAllEventStubs", function() {
    var eventRef = new Firebase("https://cal-poly-hackmit.firebaseio.com/events");
-   var s =  "<table class='table'>";
+   var s =  "<section id='events'>";
    var headers = false;
    eventRef.on('value', function(snapshot){
       if ( snapshot == null ){
-         s += "<tr><td>null</td></tr>";
+         s += "<h2>Null Title</h2><p>null description</p>";
       }
       snapshot.forEach(function(childSnapshot){
          var childVal = childSnapshot.val();
          var key;
-         s += "<tr>";
-         if (headers == false){
-            for ( key in childVal ){
-               s += "<td><b>" + key + "</b></td>";
-            }
-            s += "</tr><tr>"
-            headers = true;
-         }
+   		var areaCode;
+   		var city;
+   		var endTime;
+   		var name;
+   		var startTime;
+   		var state;
+   		var street;
+   		var date;
+         
+         s += "<div class = 'event'> <img width='200' height='135'/>";
+		 
          for ( key in childVal ){
-            s += "<td>" + childVal[key] + "</td>";
+   			if (key == "area-code")
+   				return areaCode = childVal[key];
+   			else if (key == "city")
+   				return city = childVal[key];
+   			else if (key == "end-time")
+   				return endTime = childVal[key];
+   			else if (key == "name")
+   				return name = childVal[key];
+   			else if (key == "start-time")
+   				return startTime = childVal[key];
+   			else if (key == "state")
+   				return state = childVal[key];
+   			else if (key == "street")
+   				return street = childVal[key];
+   			else if (key == "date")
+   				return date = childVal[key];
          }
-         s += "</tr>";
+		 
+		   s += "<h2>" + name + "</h2>";
+         s += "<p>" + startTime + "</p>";
+         s += "<p>" + endTime + "</p>";
+         s += "<footer>" + date + "</footer>";
+         s += "</div>";
       });
    });
-   s += "</table>";
+   s += "</section>";
    return s;
 });
