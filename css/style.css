@@ -28,7 +28,7 @@ body > .container {
 	height: 100%;
 }
 
-#event-list {
+.event-list {
 	float: left;
 	width: 70%;
 	padding: 2%;
@@ -38,7 +38,7 @@ body > .container {
 	overflow: auto;
 }
 
-#event-list div {
+.event-list div {
 	float: left;
 	width: 48%;
 	padding: 2%;
@@ -50,30 +50,30 @@ body > .container {
 	margin-bottom: 2em;
 }
 
-#event-list > div:nth-child(odd) {
+.event-list > div:nth-child(odd) {
 	margin-right: 2em;
 }
 
-#event-list div img {
+.event-list div img {
 	float: left;
 	margin: 0 0.75em 0 0;
 }
 
-#event-list div h2 {
+.event-list div h2 {
 	padding: 0 0 0.75em;
 	margin: 0;
 	font-size: 1.25em;
 	font-weight: bold;
 }
 
-#event-list div p {
+.event-list div p {
 	padding: 0 0 1em;
 	line-height: 1.5em;
 	font-size: 0.875em;
 	margin: 0;
 }
 
-#event-list div footer {
+.event-list div footer {
 	position: absolute;
 	bottom: 1.5em;
 	right: 1.5em;
